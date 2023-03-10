@@ -1,0 +1,28 @@
+:where(a, .btn) {
+  --color: hsl(185 26% 9%);
+  --backdrop: hsl(183 74% 44%);
+  font: inherit;
+  color: hsl(185 26% 9%);
+  border-radius: 5px;
+}
+
+:where(a, .btn):focus {
+  outline: none;
+}
+:where(a, .btn):is(:hover, :focus-visible) {
+  -webkit-box-shadow: 0 0 0 3px hsl(190 60% 98%), 0 0 0 6px hsl(183 74% 44%);
+  box-shadow: 0 0 0 3px hsl(190 60% 98%), 0 0 0 6px hsl(185 26% 9%);
+}
+:where(.btn) {
+  color: hsl(190 60% 98%);
+  background-color: hsl(183 74% 44%);
+  color: var(--color);
+  padding: 10px 16px;
+  border: 2px solid var(--backdrop);
+  font-size: var(--fs-300);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}

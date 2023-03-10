@@ -1,0 +1,14 @@
+.main-container {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  height: 100vh;
+}
+.main-container > img {
+  width: 100%;
+}
+main {
+  max-width: 1500px;
+  width: 100%;
+  display: grid;
+  place-items: start;
+}
