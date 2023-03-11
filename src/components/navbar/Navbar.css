@@ -1,28 +1,19 @@
-:where(a, .btn) {
-  --color: hsl(185 26% 9%);
-  --backdrop: hsl(183 74% 44%);
-  font: inherit;
-  color: hsl(185 26% 9%);
-  border-radius: 5px;
-}
-
-:where(a, .btn):focus {
-  outline: none;
-}
-:where(a, .btn):is(:hover, :focus-visible) {
-  -webkit-box-shadow: 0 0 0 3px hsl(190 60% 98%), 0 0 0 6px hsl(183 74% 44%);
-  box-shadow: 0 0 0 3px hsl(190 60% 98%), 0 0 0 6px hsl(185 26% 9%);
-}
-:where(.btn) {
-  color: hsl(190 60% 98%);
-  background-color: hsl(183 74% 44%);
-  color: var(--color);
-  padding: 10px 16px;
-  border: 2px solid var(--backdrop);
-  font-size: var(--fs-300);
-  text-decoration: none;
+.delete-button {
   display: flex;
-  align-items: center;
-  gap: 10px;
+  background-color: #f1c9c9;
+  flex-direction: column;
+  position: absolute;
+  top: 24px;
+  right: 0;
+  margin-right: 3%;
+  padding: 10px 24px;
+  border-radius: none;
+  border: 1px solid #210a61;
   cursor: pointer;
+  font-size: medium;
+}
+.delete-button:hover {
+  background-color: red;
+  color: #fff;
+  border: none;
 }

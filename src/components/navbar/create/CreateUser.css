@@ -1,0 +1,41 @@
+.create-user {
+  display: flex;
+  flex-wrap: wrap;
+  align-self: center;
+  justify-self: center;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.create-user div {
+  display: grid;
+  gap: 16px;
+  max-width: 60ch;
+}
+.create-user Form {
+  display: grid;
+  gap: 15px;
+}
+.create-user Form input {
+  max-width: 40ch;
+  padding: 10px 4px;
+  border-style: none;
+  font-size: 14px;
+}
+.create-user Form button {
+  max-width: 16ch;
+  padding: 10px 0;
+  background-color: #1e11ca;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 10px;
+  border: 1px solid #87dbd7;
+}
+.create-button:hover {
+  background-color: #000;
+  color: #fff;
+  transition: ease-in-out;
+  transition-duration: 0.5s;
+  cursor: pointer;
+}

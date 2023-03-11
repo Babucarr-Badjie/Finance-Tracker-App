@@ -1,6 +1,5 @@
 import { Outlet, useLoaderData } from "react-router-dom";
 import { fetchData } from "../Helpers";
-import footerLogo from "../assets/images/footerLogo.svg";
 import "./MainLayout.css";
 import Navbar from "../components/navbar/Navbar";
 
@@ -18,7 +17,7 @@ export default function MainLayout() {
       <main>
         <Outlet />
       </main>
-      <img src={footerLogo} alt="footerlogo" />
+     
     </div>
   );
 }
