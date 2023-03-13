@@ -1,0 +1,71 @@
+.form-container {
+  flex: 1 1 48%;
+  max-width: 800px;
+  position: relative;
+  display: grid;
+  gap: 24px;
+  width: 100%;
+  margin-top: 12px;
+  background-color: hsl(190 60% 98%);
+  padding: 30px;
+  border-radius: 25px;
+  box-shadow: 0.25em 0.3em 1em hsl(183 8% 55% / 0.2);
+  border-top: 0.15em solid white;
+  border-left: 0.15em solid white;
+  border-right: 0.15em solid hsl(190 60% 98%);
+  border-bottom: 0.15em solid hsl(190 60% 98%);
+}
+.form-container::before {
+  content: "";
+  position: absolute;
+  inset: 0.55rem;
+  border: 2px dashed hsl(185 26% 9%);
+  border-radius: calc(25px * 0.6);
+  z-index: -1;
+}
+.create-budget-form {
+  display: grid;
+  gap: 16px;
+  width: 100%;
+  
+}
+.create-budget-form-info {
+  display: grid;
+  gap: 10px;
+  width: 100%;
+}
+label {
+  font-size: clamp(0.94rem, calc(0.84rem + 0.51vw), 1.2rem);
+  font-weight: bold;
+}
+input,
+select {
+  width: 100%;
+  font-size: clamp(0.94rem, calc(0.84rem + 0.51vw), 1.2rem);
+  background-color: hsl(190 60% 98%);
+  border: 1px solid hsl(183 8% 55%);
+  border-radius: 5px;
+  padding: 6px 6px;
+  height: 100%;
+}
+
+:is(input, select):focus {
+  outline: none;
+  border-color: hsl(183 74% 44%);
+  box-shadow: 0 0 0 1px hsl(183 74% 44%);
+}
+.create-budget-button {
+  padding: 10px 10px;
+  background-color: #1e11ca;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 10px;
+  border: 1px solid #87dbd7;
+}
+.create-budget-button:hover {
+  background-color: #000;
+  color: #fff;
+  transition: ease-in-out;
+  transition-duration: 0.5s;
+  cursor: pointer;
+}

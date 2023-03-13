@@ -15,7 +15,7 @@ export default function Navbar({ userName }) {
           method="post"
           action="/logout"
           onSubmit={(e) => {
-            if (!window.confirm("Do you want to delete this user data?")) {
+            if (!window.confirm("Do you want to delete this user account?")) {
               e.preventDefault();
             }
           }}

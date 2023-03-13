@@ -21,6 +21,7 @@ export default function CreateUser() {
             aria-label="Your Name"
             autoComplete="given-name"
           />
+          <input type="hidden" name="_action" value="newUser"/>
 
           <button type="submit" className="create-button">
             <span>Create Account</span> <BiUserCircle width={20} />
