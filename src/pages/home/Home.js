@@ -2,7 +2,7 @@ import { useLoaderData } from "react-router-dom";
 import { toast } from "react-toastify";
 import AddBudgetForm from "../../components/addBudget/AddBudgetForm";
 import CreateUser from "../../components/navbar/create/CreateUser";
-import { createBudget, fetchData } from "../../Helpers";
+import { createBudget, disabledButton, fetchData } from "../../Helpers";
 import "./Home.css";
 
 // home page loader
@@ -14,6 +14,7 @@ export function homeLoader() {
 
 // home page action
 export async function homeAction({ request }) {
+  await disabledButton()
   const data = await request.formData();
   const { _action, ...values } = Object.fromEntries(data);
 

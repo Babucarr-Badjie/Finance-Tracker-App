@@ -1,7 +1,7 @@
 // generate random color
 const generateRandomcolor = () => {
   const existingBugetLength = fetchData("budgets")?.length ?? 0;
-  return `${existingBugetLength * 34} 65% 50%`
+  return `${existingBugetLength * 34} 65% 50%`;
 };
 
 // Local Storage
@@ -29,3 +29,7 @@ export const createBudget = ({ name, amount }) => {
 export const deleteUser = ({ key }) => {
   return localStorage.removeItem(key);
 };
+
+// function to disabled the create Budget button when submitting
+export const disabledButton = () =>
+  new Promise((res) => setTimeout(res, Math.random() * 3000));
